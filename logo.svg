@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFB45C"/>
+      <stop offset="1" stop-color="#E9622C"/>
+    </linearGradient>
+    <linearGradient id="fur" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FFEEDC"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="114" fill="url(#bg)"/>
+
+  <!-- ears -->
+  <g fill="url(#fur)">
+    <ellipse cx="171" cy="152" rx="37" ry="92" transform="rotate(-15 171 152)"/>
+    <ellipse cx="341" cy="152" rx="37" ry="92" transform="rotate(15 341 152)"/>
+  </g>
+  <g fill="#E9622C" opacity="0.35">
+    <ellipse cx="173" cy="158" rx="18" ry="60" transform="rotate(-15 173 158)"/>
+    <ellipse cx="339" cy="158" rx="18" ry="60" transform="rotate(15 339 158)"/>
+  </g>
+
+  <!-- head + muzzle -->
+  <g fill="url(#fur)">
+    <ellipse cx="256" cy="288" rx="112" ry="114"/>
+    <ellipse cx="256" cy="372" rx="66" ry="58"/>
+  </g>
+
+  <!-- eyes -->
+  <g fill="#8C3A12">
+    <circle cx="209" cy="282" r="18"/>
+    <circle cx="303" cy="282" r="18"/>
+  </g>
+  <g fill="#FFFFFF" opacity="0.9">
+    <circle cx="215" cy="276" r="6"/>
+    <circle cx="309" cy="276" r="6"/>
+  </g>
+
+  <!-- nose -->
+  <path d="M256 331 q22 0 22 16 q0 15 -22 22 q-22 -7 -22 -22 q0 -16 22 -16 z" fill="#8C3A12"/>
+  <!-- mouth -->
+  <path d="M256 369 v14 M256 383 q-16 0 -20 -12 M256 383 q16 0 20 -12"
+        fill="none" stroke="#8C3A12" stroke-width="7" stroke-linecap="round"/>
+</svg>
