@@ -184,3 +184,12 @@ table.dpt th { font-family: "IBM Plex Mono", monospace; font-size: 0.7rem; lette
   .spine-foot { margin-top: 0; margin-left: auto; }
   main { padding: 2.2rem 1.3rem 4rem; }
 }
+
+code {
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 0.86em;
+  background: var(--paper-alt);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  padding: 0.05em 0.35em;
+}

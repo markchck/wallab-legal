@@ -60,6 +60,8 @@
       </ul>
 
       <h3 class="clause"><span class="num">03</span>보관 및 파기</h3>
+      <p>인증 정보는 브라우저 안에도 저장됩니다. 액세스 토큰은 브라우저 세션이 끝나면 사라지는 <code>chrome.storage.session</code>에, 재발급 토큰과 계정 정보는 <code>chrome.storage.local</code>에 보관하며, 두 저장소 모두 확장 프로그램의 신뢰된 컨텍스트에서만 접근하도록 제한합니다. 확장 프로그램과 서버 사이의 모든 통신은 HTTPS/TLS로 암호화됩니다.</p>
+
       <p>수집한 정보는 서비스 제공 기간 동안 AWS(서울 리전) 인프라에 보관됩니다. 이용자가 확장 프로그램 내 기능으로 <mark>계정 삭제</mark>를 요청하면, 계정 정보와 저장된 하이라이트·메모는 지체 없이 파기됩니다. 관계 법령에 따라 보존해야 하는 정보가 있는 경우 해당 기간 동안만 별도 보관합니다.</p>
 
       <h3 class="clause"><span class="num">04</span>제3자 제공 및 처리위탁</h3>
@@ -72,7 +74,18 @@
       <h3 class="clause"><span class="num">05</span>이용자의 권리</h3>
       <p>이용자는 언제든지 자신의 개인정보 열람·정정·삭제를 요청할 수 있으며, 확장 프로그램의 계정 삭제 기능을 통해 직접 탈퇴할 수 있습니다. 별도 문의는 아래 연락처로 접수됩니다.</p>
 
-      <h3 class="clause"><span class="num">06</span>문의처</h3>
+      <h3 class="clause"><span class="num">06</span>확장 프로그램 권한과 사용 범위</h3>
+      <p>Wallab은 하이라이트·메모라는 단일 목적에 필요한 권한만 요청합니다.</p>
+      <ul class="plain">
+        <li><strong>storage</strong> — 하이라이트·메모와 로그인 상태를 브라우저에 저장</li>
+        <li><strong>identity</strong> — Google 계정 로그인 처리</li>
+        <li><strong>sidePanel</strong> — 사이드패널에서 작성한 항목을 관리</li>
+        <li><strong>contextMenus</strong> — 선택한 텍스트를 우클릭 메뉴로 추가</li>
+        <li><strong>웹페이지 접근</strong> — 하이라이트를 표시하고 원래 위치에 복원</li>
+      </ul>
+      <p>운영자는 <mark>일반적인 브라우징 기록을 수집하지 않습니다.</mark> 페이지 주소는 이용자가 그 페이지에 직접 하이라이트·메모를 만들거나 이를 다시 표시할 때만 기록됩니다. 확장 프로그램에는 광고·분석·추적 목적의 외부 스크립트나 SDK가 포함되어 있지 않으며, 수집한 정보를 광고, 신용 평가, 대출 심사 등 서비스 제공과 무관한 목적으로 이용하지 않습니다.</p>
+
+      <h3 class="clause"><span class="num">07</span>문의처</h3>
       <div class="contact-block">
         <div><span class="label">담당</span>Wallab 운영자</div>
         <div><span class="label">이메일</span><a href="mailto:markchck@gmail.com">markchck@gmail.com</a></div>
